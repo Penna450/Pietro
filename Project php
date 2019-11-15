@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+/*
+Hello! i whant to make a table list order... how ever i really don't know who can i apply or onganize the code.
+my english is really terrible, so i have just a few little problem to understud. i thought to mache a underclass or subclass of 
+the class Card that is in the script below.
+lemmy know if you know something. this is a new exsperience for me. Thanks
+*/
+<?php
+                          //lista tavoli 
+class Card {
+  // Properties
+  public $name;             //classi asso; cuore; fiore;quadri
+  public $color;            // rosso; nero;
+  public $number;             // numeri copresi da uno a 10. escluse carte come k;j;Q
+  // Methods
+  function __construct($name,$color,$number) {
+    $this->name = $name;
+    $this->name = $color;
+    $this->name = $number;
+  }
+  function get_name() {
+    return $this->name;
+  }
+  function get_color() {
+    return $this->color;
+  }
+  function get_number() {
+    return $this->number;
+  }
+}
+
+$asso = new Card("Asso!","Nero!","1-10");
+echo $asso->get_name();
+echo "<br>";
+echo $asso->get_color();
+echo"<br>";
+echo $asso->get_number();
+
+$cuori = new Card("Cuori!","Rosso!","11-20");
+echo $cuori->get_name();
+echo "<br>";
+echo $cuori->get_color();
+echo"<br>";
+echo $cuori->get_number();
+
+$fiori = new Card("Fiori!","Nero!","21-30");
+echo $fiori->get_name();
+echo "<br>";
+echo $fiori->get_color();
+echo"<br>";
+echo $fiori->get_number();
+
+$quadri = new Card("Asso!","Rosso!","31-40");
+echo $quadri->get_name();
+echo "<br>";
+echo $quadri->get_color();
+echo"<br>";
+echo $quadri->get_number();
+
+
+
+/*$asso = new Card();
+    $asso->set_name('asso');
+$cuori = new Card();
+    $cuori->set_name('cuori');
+$fiori = new Card();
+    $fiori->set_name('fiori');
+$quadri = new Card();
+    $quadri->set_name('quadri')
+
+
+echo $asso->get_name();
+echo "<br>";
+echo $cuori->get_name();
+echo "<br>";
+echo $fiori->get_name();
+echo "<br>";
+echo $quadri->get_name();
+*/
+?>
+ 
+</body>
+</html>
